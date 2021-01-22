@@ -1,0 +1,27 @@
+set nocp
+syntax on
+colorscheme industry
+set wildmenu
+set showcmd
+set hlsearch
+set autoindent
+set expandtab
+filetype indent on
+set shiftround
+set shiftwidth=4
+set smarttab
+set tabstop=4
+set ignorecase
+set incsearch
+set smartcase
+set scrolloff=2
+set sidescrolloff=5
+set wrap
+set ruler
+set relativenumber
+set number
+set incsearch
+set noerrorbells
+set title
+set mouse=a
+set history=1000
