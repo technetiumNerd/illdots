@@ -3,7 +3,7 @@ syntax on "Syntax colouration
 colorscheme industry "Pick a card
 set background=dark "Background explicitly set to dark for themes if applicable
 set wildmenu "Nicer tab completion+bar
-set wildmode=longest:full "Command autocompletion extend to longest match and auto
+set wildmode=longest,full "Command autocompletion extend to longest match and auto
 set showcmd "Show info about last command etc
 set autoindent "Keep indentation
 set expandtab "Tabs are spaces
