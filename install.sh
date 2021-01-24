@@ -15,8 +15,18 @@ rm -f "${OMZPATH}/custom/themes/illtheme.zsh-theme" "${VRCPATH}"
 ln -s $SCDIR/illtheme.zsh-theme "${OMZPATH}/custom/themes/"
 ln -s $SCDIR/vimrc $VRCPATH
 
+# User should use the theme
 echo "Changing theme in .zshrc"
-
 sed -i -E 's/^ZSH_THEME=".+?"$/ZSH_THEME="illtheme"/g' $HOME"/.zshrc"
+
+# Add plugins zsh-syntax-highlighting and zsh-autosuggestions
+echo "Adding plugins"
+if [ ! -d $OMZPATH"/custom/plugins/zsh-autosuggestions/" ];
+    then git clone https://github.com/zsh-users/zsh-autosuggestions.git $OMZPATH"/custom/plugins/"
+fi
+if [ ! -d $OMZPATH"/custom/plugins/zsh-syntax-highlighting/" ];
+    then git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $OMSPATH"/custom/plugins/"
+fi
+sed -i -E 's/^plugins=\(.+?\)$/plugins=(git zsh-syntax-highlighting zsh-autosuggestions)/g' $HOME"/.zshrc"
 
 echo "All done!"
