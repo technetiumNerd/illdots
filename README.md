@@ -1,4 +1,4 @@
-# My epic dotfiles
+# The illest dotfiles
 
 Making ZSH look like home with my theme and VIM shine like the technetium bar it is.
 
