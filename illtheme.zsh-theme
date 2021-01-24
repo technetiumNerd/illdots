@@ -3,7 +3,7 @@ PROMPT='%{$NCOLOR%}%n%{$reset_color%}:%{%F{202}%}%~%{$reset_color%}:%{%F{245}%}#
 RPROMPT='$(git_prompt_info)'
 
 # git theming
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[blue]%}(%{$fg[yellow]%}%B"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%b%{$fg[blue]%})%{$reset_color%} "
+ZSH_THEME_GIT_PROMPT_PREFIX="%{%F{172}%}<%{%F{196}%}%B"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%b%{%F{172}%}>%{$reset_color%} "
 ZSH_THEME_GIT_PROMPT_CLEAN=""
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}✗"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{%F{154}%}✗"
