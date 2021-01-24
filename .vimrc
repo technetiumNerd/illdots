@@ -34,7 +34,9 @@ set undofile "Keep undofiles
 
 
 "Remove background color
-hi Normal guibg=NONE ctermbg=NONE 
+hi Normal guibg=NONE
+"ctermbg=NONE
+hi NonText guibg=NONE
 
 "Mapping of CTRL+L (redraw screen) + clear search. 
     "nnoremap to work in normal mode(n), noremap means not recursive.
