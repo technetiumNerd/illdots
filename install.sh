@@ -15,6 +15,10 @@ fi
 
 # User needs symlinks to repo
 echo "Adding symbolic links for theme and vimrc"
+<<<<<<< HEAD
+=======
+
+>>>>>>> fac1422 (?)
 rm -f "${OMZPATH}/custom/themes/illtheme.zsh-theme" "${VRCPATH}"
 ln -s $SCDIR/illtheme.zsh-theme "${OMZPATH}/custom/themes/"
 ln -s $SCDIR/vimrc $VRCPATH
