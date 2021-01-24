@@ -12,7 +12,6 @@ set shiftround "Round indents to n*shiftwidth
 set shiftwidth=4 "(Auto)indentation is 4 spaces
 set smarttab "Work properly with spaces as tabs
 set tabstop=4 "Tabs become n*tabstop spaces
-"set hlsearch "Highlight search
 set incsearch "Show search results as you are typing
 set ignorecase "Case insensitive search
 set smartcase "Case sensitive search when using capitals
@@ -24,21 +23,17 @@ set relativenumber "Line number shiz
 set number "Line numbers; With relativenumber keep current linenumber
 set noerrorbells "SHUT UP
 set title "Make console title useful
-set history=1000 "Undo history
 set hidden "Remember hidden buffers, just in case
 set mouse=a "Mouse scroll and click to select
-set termguicolors "Make the colors shine
 set noswapfile "Don't make swapfiles and clutter up the place
+set autoread "Re-read changed files
+set history=1000 "Undo history
 set undodir=~/.vim/undodir "Remember undos here
 set undofile "Keep undofiles
 
+set termguicolors "Make the colors shine
 
 "Remove background color
 hi Normal guibg=NONE
-"ctermbg=NONE
+"Remove background from empty lines
 hi NonText guibg=NONE
-
-"Mapping of CTRL+L (redraw screen) + clear search. 
-    "nnoremap to work in normal mode(n), noremap means not recursive.
-    "So it runs the original functionality also(redraw screen)
-"nnoremap <C-L> :nohlsearch<CR><C-L> 
