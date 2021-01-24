@@ -1,5 +1,5 @@
 if [ $UID -eq 0 ]; then NCOLOR="%F{13}"; else NCOLOR="%F{93}"; fi
-PROMPT='%{$NCOLOR%}%n%{$reset_color%}:%{%F{202}%}%~%{$reset_color%}:%{%F{245}%}#%{$reset_color%} '
+PROMPT='%{$NCOLOR%}%n%{$reset_color%}:%{%F{202}%}%~%{$reset_color%}:%{%F{245}%}%%%{$reset_color%} '
 RPROMPT='$(git_prompt_info)'
 
 # git theming
