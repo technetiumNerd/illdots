@@ -1,6 +1,6 @@
 set nocp "Not vi-compatibility mode pls
 syntax on "Syntax colouration
-colorscheme pablo "Pick a card
+colorscheme industry "Pick a card
 set background=dark "Background explicitly set to dark for themes if applicable
 set wildmenu "Nicer tab completion+bar
 set wildmode=longest,full "Command autocompletion extend to longest match and auto
