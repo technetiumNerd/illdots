@@ -4,9 +4,22 @@ Making ZSH look like home with my theme and VIM shine like the technetium bar it
 
 Requires ZSH, OH-MY-ZSH and VIM.
 
-Installs zsh-autosuggestions and zsh-syntax-highlighting for extra fanciness.
+---
 
-It looks like this:
+## Installing
+
+```git clone https://www.github.com/technetiumNerd/illdots
+illdots/install.sh
+```
+
+## NB
+
+Installs zsh-autosuggestions and zsh-syntax-highlighting for extra fanciness if the ^plugins(...)$-line is intact. 
+Overwrites it with git and these two.
+
+---
+
+## It looks like this:
 
 ZSH prompt:
 
