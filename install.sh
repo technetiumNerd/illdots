@@ -25,7 +25,7 @@ if [ ! -d $OMZPATH"/custom/plugins/zsh-autosuggestions/" ];
     then git clone https://github.com/zsh-users/zsh-autosuggestions.git $OMZPATH"/custom/plugins/zsh-autosuggestions"
 fi
 if [ ! -d $OMZPATH"/custom/plugins/zsh-syntax-highlighting/" ];
-    then git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $OMSPATH"/custom/plugins/zsh-syntax-highlighting"
+    then git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $OMZPATH"/custom/plugins/zsh-syntax-highlighting"
 fi
 sed -i -E 's/^plugins=\(.+?\)$/plugins=(git zsh-syntax-highlighting zsh-autosuggestions)/g' $HOME"/.zshrc"
 
