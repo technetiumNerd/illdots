@@ -8,7 +8,7 @@ Requires ZSH, OH-MY-ZSH and VIM.
 
 ## Installing
 
-```
+```zsh
 git clone https://www.github.com/technetiumNerd/illdots
 illdots/install.sh
 ```
