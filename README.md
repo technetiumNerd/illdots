@@ -8,15 +8,15 @@ Requires ZSH, OH-MY-ZSH and VIM.
 
 ## Installing
 
-```zsh
+```shell
 git clone https://www.github.com/technetiumNerd/illdots
 illdots/install.sh
 ```
 
 ## NB
 
-Installs zsh-autosuggestions and zsh-syntax-highlighting for extra fanciness if the ^plugins(...)$-line is intact. 
-Overwrites it with git and these two.
+Installs zsh-autosuggestions and zsh-syntax-highlighting for extra fanciness. 
+Overwrites plugins-line in .zshrc with git and these two if the ^plugins(...)$-line is intact.
 
 ---
 
