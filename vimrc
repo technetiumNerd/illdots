@@ -31,7 +31,7 @@ set history=1000 "Undo history
 set undodir=~/.vim/undodir "Remember undos here
 set undofile "Keep undofiles
 
-set termguicolors "Make the colors shine
+"set termguicolors "Make the colors shine
 
 "Remove background color
 hi Normal guibg=NONE
