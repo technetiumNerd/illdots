@@ -39,5 +39,3 @@ syntax on                       "Syntax colouration
 hi Normal guibg=NONE
 "Remove background from empty lines
 hi NonText guibg=NONE
-"Remove background from ... cterm?
-hi Normal ctermbg=NONE
