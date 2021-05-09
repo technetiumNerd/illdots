@@ -16,11 +16,12 @@ illdots/install.sh
 ## NB
 
 Installs zsh-autosuggestions and zsh-syntax-highlighting for extra fanciness. 
-Overwrites plugins-line in .zshrc with git and these two if the ^plugins(...)$-line is intact.
+Backs up .vimrc + .zshrc as \*.bak. Vim get Gruvbox with transparent brackground.
+Overwrites plugins-line in .zshrc with git and these two if the /^plugins(.\*)$/-line is intact.
 
 ---
 
-## It looks like this:
+## It used to look like this:
 
 ZSH prompt:
 
