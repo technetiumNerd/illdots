@@ -31,6 +31,7 @@ ln -s "$SCDIR/vimrc" $VRCPATH
 echo "Backing up .zshrc to .zshrc.bak and changing theme"
 [ -f ~/.zshrc ] && cp "~/.zshrc" "~/.vimrc.bak" && echo ".zshrc backed up to .zshrc.bak";
 sed -i -E 's/^ZSH_THEME=".+?"$/ZSH_THEME="illtheme"/g' $HOME"/.zshrc"
+echo "unsetopt HIST_VERIFY" >> ~/.zshrc
 
 # Add plugins zsh-syntax-highlighting, zsh-autosuggestions, and my aliases
 echo "Adding plugins"
