@@ -25,7 +25,8 @@ ln -s "$SCDIR/alias" "${OMZPATH}/custom/plugins/"
 ln -s "$SCDIR/vimrc" $VRCPATH
 
 # User should have gruvbox for vim; installing with no pluginmanager
-[ ! -d $HOME"/.vim/pack/default/autostart/gruvbox/" ] && mkdir -p $HOME"/.vim/pack/default/start" && git clone https://github.com/morhetz/gruvbox.git $HOME"/.vim/pack/default/start/gruvbox";
+echo "gruvbox for vim installed to ~/.vim/pack/default/start"
+[ $GRUVINSTALL == true && ! -d $HOME"/.vim/pack/default/autostart/gruvbox/" ] && mkdir -p $HOME"/.vim/pack/default/start" && git clone https://github.com/morhetz/gruvbox.git $HOME"/.vim/pack/default/start/gruvbox";
 
 # User should use the theme
 echo "Backing up .zshrc to .zshrc.bak and changing theme"
