@@ -11,10 +11,10 @@ VRCPATH=$HOME"/.vimrc"
 # Tell user to have the things
 echo "Make sure you have vim, zsh, and oh-my-zsh installed"
 DOEXIT=false;
-[ ! -d $OMZPATH ] && echo "No OMZ installed?" && DOEXIT=true;
-[ ! $(command -v zsh) ] && echo "No ZSH installed?" && DOEXIT=true;
-[ ! $(command -v vim) ] && echo "No VIM installed?" && DOEXIT=true;
-[ $DOEXIT ] && echo "Bye!" && exit 1;
+[ ! -d $OMZPATH ] && {echo "No OMZ installed?" && DOEXIT=true}
+[ ! $(command -v zsh) ] && {echo "No ZSH installed?" && DOEXIT=true}
+[ ! $(command -v vim) ] && {echo "No VIM installed?"&& DOEXIT=true}
+[ $DOEXIT ] && {echo "Bye!" && exit 1}
 
 # User needs symlinks to repo
 echo "Adding symbolic links for theme and vimrc"
