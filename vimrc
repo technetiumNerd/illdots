@@ -19,9 +19,9 @@ set autoindent                  "Keep indentation
 set expandtab                   "Tabs are spaces
 filetype plugin indent on       "Try to get indentation right depending on filetype
 set shiftround                  "Round indents to n*shiftwidth
-set shiftwidth=4                "(Auto)indentation is 4 spaces
+set shiftwidth=2                "(Auto)indentation is 2 spaces
 set smarttab                    "Work properly with spaces as tabs
-set tabstop=4                   "Tabs become n*tabstop spaces
+set tabstop=2                   "Tabs become n*tabstop spaces
 set incsearch                   "Show search results as you are typing
 set ignorecase                  "Case insensitive search
 set smartcase                   "Case sensitive search when using capitals
