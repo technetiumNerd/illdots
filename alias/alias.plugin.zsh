@@ -1,4 +1,5 @@
 alias ncmpcpp="ncmpcpp -q"
-alias ealias="vim ~/.oh-my-zsh/custom/plugins/alias/alias.plugin.zsh"
-alias ezsh="vim ~/.zshrc"
-alias evim="vim ~/.vimrc"
+alias ealias="nvim ~/.oh-my-zsh/custom/plugins/alias/alias.plugin.zsh"
+alias ezsh="nvim ~/.zshrc"
+alias evim="nvim ~/.vimrc"
+alias envim="nvim ~/.config/nvim/init.vim"
