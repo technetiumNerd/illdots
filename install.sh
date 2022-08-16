@@ -7,6 +7,7 @@ GRUVINSTALL=true
 SCDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 OMZPATH=$HOME"/.oh-my-zsh"
 VRCPATH=$HOME"/.vimrc"
+VINITPATH=$HOME"/.config/nvim/init.vim"
 
 # Tell user to have the things
 echo "Make sure you have vim, zsh, and oh-my-zsh installed"
@@ -23,6 +24,11 @@ ln -s "$SCDIR/illtheme.zsh-theme" "${OMZPATH}/custom/themes/"
 ln -s "$SCDIR/alias" "${OMZPATH}/custom/plugins/"
 [ -f ~/.vimrc ] && cp $VRCPATH "$HOME/.vimrc.bak" && echo ".vimrc backed up to .vimrc.bak";
 ln -s "$SCDIR/vimrc" $VRCPATH
+[ !-d $HOME"/.config/nvim" ] && mkdir $HOME"/.config/nvim"
+ln -s "$SCDIR/init.vim" $VINITPATH
+
+# Install Vim-Plug for nvim
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # User should have gruvbox for vim; installing with no pluginmanager
 echo "gruvbox for vim installed to ~/.vim/pack/default/start"
