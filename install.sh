@@ -28,7 +28,9 @@ ln -s "$SCDIR/vimrc" $VRCPATH
 ln -s "$SCDIR/init.vim" $VINITPATH
 
 # Install Vim-Plug for nvim
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
 
 # User should have gruvbox for vim; installing with no pluginmanager
 echo "gruvbox for vim installed to ~/.vim/pack/default/start"
