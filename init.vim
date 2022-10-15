@@ -8,6 +8,7 @@ call plug#end()
 "normal vim stuff
 set background=dark
 colorscheme gruvbox
+set nowrap
 set ignorecase
 set smartcase
 set scrolloff=5
