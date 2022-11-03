@@ -11,7 +11,7 @@ fi
 
 
 
-PROMPT='%{$NCOLOR%}%n%{$reset_color%}:%{$ORANGE%}%~%{$reset_color%}:%{$GREY%}%%%{$reset_color%} '
+PROMPT='%{$NCOLOR%}%n%{$reset_color%}@%{$ORANGE%}%m%{$reset_color%}:%{$ORANGE%}%~%{$reset_color%}:%{$GREY%}%%%{$reset_color%} '
 RPROMPT='$(git_prompt_info)'
 
 # git theming

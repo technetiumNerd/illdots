@@ -24,3 +24,6 @@ bspc config focus_follows_pointer   true
 ##bspc rule -a mplayer2 state=floating
 ##bspc rule -a Kupfer.py focus=on
 ##bspc rule -a Screenkey manage=off
+
+~/.config/polybar/launch.sh
+#polybar 2>/dev/null &

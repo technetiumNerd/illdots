@@ -15,6 +15,10 @@ alt + {_, shift} + Tab
   bspc node -f {next, prev}.window
 #  rofi -show window
 
+# screenshot program
+super + ctrl + s
+  flameshot gui
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
