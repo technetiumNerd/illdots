@@ -1,17 +1,19 @@
 #use extended color palette if available
-if [[ $TERM = *256color* || $TERM = *rxvt* ]]; then
+if [[ $TERM = *256color* || $TERM = *rxvt* || $TERM = *alacritty* ]]; then
     if [ $UID -eq 0 ]; then NCOLOR="%F{13}"; else NCOLOR="%F{93}"; fi
     ORANGE="%F{202}"
-    GREY="%F{240}"
+    GREY="%F{241}"
+    RED="%F{196}"
 else
     if [ $UID -eq 0 ]; then NCOLOR="$fg[red]"; else NCOLOR="$fg[magenta]"; fi
     ORANGE="$fg[yellow]"
-    GREY="$fg[light-gray]"
+    GREY="$fg[gray]"
+    RED="$fg[red]"
 fi
 
 
 
-PROMPT='%{$NCOLOR%}%n%{$reset_color%}@%{$ORANGE%}%m%{$reset_color%}:%{$ORANGE%}%~%{$reset_color%}:%{$GREY%}%%%{$reset_color%} '
+PROMPT='%{$ORANGE%}%~%{$reset_color%}:%{$NCOLOR%}%n%{$reset_color%}@%{$RED%}%m%{$reset_color%}:%{$GREY%}%#%{$reset_color%} '
 RPROMPT='$(git_prompt_info)'
 
 # git theming
