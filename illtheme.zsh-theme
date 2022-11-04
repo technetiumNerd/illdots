@@ -3,7 +3,7 @@ if [[ $TERM = *256color* || $TERM = *rxvt* || $TERM = *alacritty* ]]; then
     if [ $UID -eq 0 ]; then NCOLOR="%F{13}"; else NCOLOR="%F{93}"; fi
     ORANGE="%F{202}"
     GREY="%F{241}"
-    RED="%F{196}"
+    RED="%F{9}"
 else
     if [ $UID -eq 0 ]; then NCOLOR="$fg[red]"; else NCOLOR="$fg[magenta]"; fi
     ORANGE="$fg[yellow]"
