@@ -1,0 +1,30 @@
+#! /bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+pgrep -x polybar > /dev/null || polybar &
+
+bspc monitor -d I II III IV V VI
+bspc config border_width            1
+bspc config window_gap              6
+
+bspc config split_ratio             0.50
+bspc config borderless_monocle      true
+bspc config gapless_monocle         true
+##bspc config right_padding           0
+##bspc config bottom_padding          0
+##bspc config left_padding            0
+
+bspc config presel_feedback_color   "#33ee77"
+bspc config active_border_color     "#33ee77"
+bspc config normal_border_color     "#33aa00"
+bspc config focused_border_color    "#ee22aa"
+bspc config focus_follows_pointer   true
+
+##bspc rule -a Gimp desktop='^8' state=floating follow=on
+##bspc rule -a Chromium desktop='^2'
+##bspc rule -a mplayer2 state=floating
+##bspc rule -a Kupfer.py focus=on
+##bspc rule -a Screenkey manage=off
+
+#~/.config/polybar/launch.sh
+#polybar 2>/dev/null &
