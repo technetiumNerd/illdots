@@ -23,7 +23,7 @@ set shiftround
 set tabstop=2
 set shiftwidth=2
 set smarttab
-set clipboard=unnamedplus
+set clipboard+=unnamedplus
 set title
 set hidden
 set mouse=a
